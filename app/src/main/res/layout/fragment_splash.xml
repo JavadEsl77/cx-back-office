@@ -16,10 +16,12 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_splash" />
 
-        <LinearLayout
+        <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#25BB86FC" />
+            android:alpha=".1"
+            android:background="@color/purple_700" />
+
 
 
         <LinearLayout

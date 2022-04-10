@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.2055" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.32083333333333336" />
+        <entry key="app/src/main/res/layout/fragment_list_page.xml" value="0.32083333333333336" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.32083333333333336" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/toolbar_main.xml" value="0.25" />
