@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,27 +13,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/shape_layout_item_rec"
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fff"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:drawableRight="@drawable/ic_baseline_layers_assets"
                     android:drawablePadding="10dp"
                     android:gravity="center|right"
                     android:text="اسنپ مارکت"
                     android:textColor="@color/purple_500"
                     android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded"
+                    app:drawableRightCompat="@drawable/ic_baseline_layers_assets" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -87,178 +94,162 @@
 
             </LinearLayout>
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="center|right"
+                android:text="سید عارف سجادی"
+                android:textColor="@color/purple_500"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:drawableRightCompat="@drawable/ic_baseline_person"
+                tools:ignore="RtlHardcoded" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#d6d6d6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="اسنپ دکتر متاسفانه شکل و مسیر اصلیش رو پیدا نکرده طی 3 ماه چندین نوع شیفت مختلف چیده شد که با همش کنار اومدم و پرداختیش رو طبق قراردادی که بسته بودن انجام نمیدادن! هر هفته وظایف جدیدی که اول کار هیچ خبری ازین وظایف نبود اضافه میشد، حقوق افراد با یک سمت کاری باهم متفاوت بود! قرارداد وزارت کاری اما پرداخت ساعتی انجام میشد! آخرش هم بدون هیچ مقدمه ای قطع همکاری کردن"
+                android:textColor="#737373"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
                 android:background="#d6d6d6" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="7dp"
-                android:background="@drawable/shape_layout_item_rec"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_layout_detail_item"
                 android:orientation="vertical"
-                android:padding="15dp">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:drawableRight="@drawable/ic_baseline_person"
-                    android:drawablePadding="10dp"
-                    android:gravity="center|right"
-                    android:text="سید عارف سجادی"
-                    android:textColor="@color/purple_500"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="5dp"
-                    android:background="#d6d6d6" />
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="اسنپ دکتر متاسفانه شکل و مسیر اصلیش رو پیدا نکرده طی 3 ماه چندین نوع شیفت مختلف چیده شد که با همش کنار اومدم و پرداختیش رو طبق قراردادی که بسته بودن انجام نمیدادن! هر هفته وظایف جدیدی که اول کار هیچ خبری ازین وظایف نبود اضافه میشد، حقوق افراد با یک سمت کاری باهم متفاوت بود! قرارداد وزارت کاری اما پرداخت ساعتی انجام میشد! آخرش هم بدون هیچ مقدمه ای قطع همکاری کردن"
-                    android:textColor="#737373"
+                    android:text="تاریخ ثبت : 1399/07/08"
+                    android:textColor="@color/black"
                     android:textSize="14dp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_margin="5dp"
+                    android:layout_margin="4dp"
                     android:background="#d6d6d6" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/shape_layout_detail_item"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:layout_margin="5dp"
+                    android:text="عنوان شغلی : تخصص مخفی "
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="تاریخ ثبت : 1399/07/08"
-                        android:textColor="@color/black"
-                        android:textSize="14dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="عنوان شغلی : تخصص مخفی "
-                        android:textColor="@color/black"
-                        android:textSize="14dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="نوع همکاری : کارمند"
-                        android:textColor="@color/black"
-                        android:textSize="14dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="حقوق درخواستی : 2,500,000 تومان "
-                        android:textColor="@color/black"
-                        android:textSize="14dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="حقوق دریافتی : 2,500,000 تومان"
-                        android:textColor="@color/black"
-                        android:textSize="14dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/shape_btn_list_item"
-                    android:orientation="horizontal">
+                    android:layout_height="1dp"
+                    android:layout_margin="4dp"
+                    android:background="#d6d6d6" />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:text="رد کردن"
-                        android:textColor="@android:color/holo_red_light" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="نوع همکاری : کارمند"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
 
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="4dp"
+                    android:background="#d6d6d6" />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:text="ویرایش" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="حقوق درخواستی : 2,500,000 تومان "
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="4dp"
+                    android:background="#d6d6d6" />
 
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="4dp"
-                        android:background="#d6d6d6" />
-
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:text="ثبت نظر" />
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="حقوق دریافتی : 2,500,000 تومان"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_btn_list_item"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="رد کردن"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#d6d6d6" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="ویرایش" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#d6d6d6" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="ثبت نظر" />
+
+            </LinearLayout>
 
         </LinearLayout>
+
 
     </ScrollView>
 </FrameLayout>
