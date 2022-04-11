@@ -6,11 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import com.companyux.backOffice.R
 import com.companyux.backOffice.databinding.FragmentSplashBinding
-import com.companyux.backOffice.feature.MainActivity
 import com.companyux.backOffice.feature.MainActivity.Companion.sharedPreferences
 
 class SplashFragment : Fragment() {
@@ -33,7 +31,7 @@ class SplashFragment : Fragment() {
             handler.postDelayed({
 
                 findNavController(this).navigate(R.id.action_splashFragment_to_homeFragment)
-            }, 1000)
+            }, 1200)
         }else{
             val handler = Handler()
             handler.postDelayed({
