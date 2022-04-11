@@ -1,5 +1,6 @@
 package com.companyux.backOffice.feature.login
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment
 import com.companyux.backOffice.R
 import com.companyux.backOffice.databinding.FragmentLoginBinding
+import com.companyux.backOffice.feature.MainActivity.Companion.sharedPreferences
 
 class LoginFragment : Fragment() {
 
@@ -23,10 +25,26 @@ class LoginFragment : Fragment() {
     ): View? {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
 
+        val editor:SharedPreferences.Editor =  sharedPreferences.edit()
         binding.apply {
             binding.btnLogin.setOnClickListener {
-                NavHostFragment.findNavController(requireParentFragment()).navigate(R.id.action_loginFragment_to_homeFragment)
+                val passwordEdt = edtCellNumber.text.toString()
+                if (passwordEdt == "14010121") {
+                    NavHostFragment.findNavController(requireParentFragment())
+                        .navigate(R.id.action_loginFragment_to_homeFragment)
+
+                    editor.putString("password_sh","14010121")
+                    editor.putBoolean("state",true)
+                    editor.apply()
+
+                } else if (passwordEdt == "") {
+                    edtCellNumber.error = "رمز را وارد کنید ):"
+                } else {
+                    edtCellNumber.error = "رمز اشتباه است"
+                }
             }
+
+
         }
 
         return binding.root

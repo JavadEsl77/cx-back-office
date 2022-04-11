@@ -10,6 +10,8 @@ import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import com.companyux.backOffice.R
 import com.companyux.backOffice.databinding.FragmentSplashBinding
+import com.companyux.backOffice.feature.MainActivity
+import com.companyux.backOffice.feature.MainActivity.Companion.sharedPreferences
 
 class SplashFragment : Fragment() {
 
@@ -25,20 +27,22 @@ class SplashFragment : Fragment() {
     ): View? {
         binding = FragmentSplashBinding.inflate(inflater, container, false)
 
+        val sharedIdValue = sharedPreferences.getBoolean("state",false)
+        if (sharedIdValue){
+            val handler = Handler()
+            handler.postDelayed({
 
-        val handler = Handler()
-        handler.postDelayed({
+                findNavController(this).navigate(R.id.action_splashFragment_to_homeFragment)
+            }, 2000)
+        }else{
+            val handler = Handler()
+            handler.postDelayed({
 
-//            findNavController(this)
-//                .navigate(R.id.action_splashFragment_to_loginFragment,
-//                    null,
-//                    NavOptions.Builder()
-//                        .setPopUpTo(R.id.splashFragment,
-//                            true).build()
-//                )
+                findNavController(this).navigate(R.id.action_splashFragment_to_loginFragment)
+            }, 2000)
+        }
 
-            findNavController(this).navigate(R.id.action_splashFragment_to_loginFragment)
-        }, 2000)
+
 
         return binding.root
     }
