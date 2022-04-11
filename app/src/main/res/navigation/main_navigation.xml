@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/listPageFragment"
-        android:name="com.companyux.backOffice.feature.listPage.ListPageFragment"
+        android:name="com.companyux.backOffice.feature.listPage.CommentPageFragment"
         android:label="fragment_list_page"
-        tools:layout="@layout/fragment_list_page" />
+        tools:layout="@layout/fragment_comment_page" />
 </navigation>

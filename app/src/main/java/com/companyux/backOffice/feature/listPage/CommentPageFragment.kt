@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.companyux.backOffice.R
-import com.companyux.backOffice.databinding.FragmentListPageBinding
+import com.companyux.backOffice.databinding.FragmentCommentPageBinding
 
-class ListPageFragment : Fragment() {
+class CommentPageFragment : Fragment() {
 
-    lateinit var binding:FragmentListPageBinding
+    lateinit var binding:FragmentCommentPageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -20,7 +20,7 @@ class ListPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       binding= FragmentListPageBinding.inflate(inflater,container,false)
+       binding= FragmentCommentPageBinding.inflate(inflater,container,false)
         return binding.root
     }
 
