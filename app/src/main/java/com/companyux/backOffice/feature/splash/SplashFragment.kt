@@ -33,7 +33,7 @@ class SplashFragment : Fragment() {
             handler.postDelayed({
 
                 findNavController(this).navigate(R.id.action_splashFragment_to_homeFragment)
-            }, 2000)
+            }, 1000)
         }else{
             val handler = Handler()
             handler.postDelayed({
