@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/androidProjects/cx-back-office/app/src/main/res/layout/fragment_comment_page.xml" value="0.25416666666666665" />
         <entry key="..\:/androidProjects/cx-back-office/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/androidProjects/cx-back-office/app/src/main/res/layout/fragment_login.xml" value="0.176" />
         <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/ic_baseline_layers_assets.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable/ic_baseline_person.xml" value="0.1525" />
