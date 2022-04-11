@@ -27,6 +27,7 @@ class SplashFragment : Fragment() {
 
         val sharedIdValue = sharedPreferences.getBoolean("state",false)
         if (sharedIdValue){
+
             val handler = Handler()
             handler.postDelayed({
 

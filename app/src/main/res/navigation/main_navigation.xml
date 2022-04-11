@@ -38,14 +38,28 @@
         android:id="@+id/homeFragment"
         android:name="com.companyux.backOffice.feature.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_listPageFragment"
-            app:destination="@id/listPageFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/listPageFragment"
         android:name="com.companyux.backOffice.feature.listPage.CommentPageFragment"
         android:label="fragment_list_page"
-        tools:layout="@layout/fragment_comment_page" />
+        tools:layout="@layout/fragment_comment_page" >
+        <action
+            android:id="@+id/action_listPageFragment_to_detailOfficeFragment"
+            app:destination="@id/detailOfficeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailOfficeFragment"
+        android:name="com.companyux.backOffice.feature.detailOffice.DetailOfficeFragment"
+        android:label="fragment_detail_office"
+        tools:layout="@layout/fragment_detail_office" />
+    <fragment
+        android:id="@+id/officePageFragment"
+        android:name="com.companyux.backOffice.feature.office.OfficePageFragment"
+        android:label="fragment_office_page"
+        tools:layout="@layout/fragment_office_page" >
+        <action
+            android:id="@+id/action_officePageFragment_to_detailOfficeFragment"
+            app:destination="@id/detailOfficeFragment" />
+    </fragment>
 </navigation>
