@@ -228,6 +228,21 @@
                         android:orientation="horizontal">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_reject"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:text="رد کردن"
+                            android:textColor="@android:color/holo_red_light" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="#d6d6d6" />
+
+                        <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -362,6 +377,20 @@
                         android:layout_marginTop="15dp"
                         android:background="@drawable/shape_btn_list_item"
                         android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:text="رد کردن"
+                            android:textColor="@android:color/holo_red_light" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="#d6d6d6" />
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_width="0dp"

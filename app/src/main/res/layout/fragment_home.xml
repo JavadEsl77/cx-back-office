@@ -23,15 +23,13 @@
             android:background="#1db995">
         </com.google.android.material.tabs.TabLayout>
 
-        <androidx.viewpager.widget.ViewPager
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             app:layout_constraintTop_toBottomOf="@+id/tabLayout"
             tools:layout_editor_absoluteX="8dp" />
-
-
 
     </LinearLayout>
 </FrameLayout>
