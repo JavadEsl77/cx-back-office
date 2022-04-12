@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="10dp"
+            android:gravity="center|right"
+            android:text="پیغام ( مدیریت محترم )"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"
+            app:drawableRightCompat="@drawable/ic_baseline_layers_assets" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="اسنپ دکتر متاسفانه شکل و مسیر اصلیش رو پیدا نکرده طی 3 ماه چندین نوع شیفت مختلف چیده شد که با همش کنار اومدم و پرداختیش رو طبق قراردادی که بسته بودن انجام نمیدادن! هر هفته وظایف جدیدی که اول کار هیچ خبری ازین وظایف نبود اضافه میشد، حقوق افراد با یک سمت کاری باهم متفاوت بود!"
+            android:textColor="#737373"
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:paddingVertical="6dp"
+                android:text="انصراف"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+
+                app:cornerRadius="5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:paddingVertical="6dp"
+                android:textColor="@color/purple_700"
+                app:backgroundTint="@color/colorBackground"
+                android:text="تایید"
+                android:textSize="18sp"
+                app:cornerRadius="5dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

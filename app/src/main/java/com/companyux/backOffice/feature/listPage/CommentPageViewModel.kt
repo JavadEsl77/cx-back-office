@@ -1,4 +1,6 @@
 package com.companyux.backOffice.feature.listPage
 
-class CommentPageViewModel {
+import androidx.lifecycle.ViewModel
+
+class CommentPageViewModel :ViewModel(){
 }
