@@ -19,19 +19,23 @@
             android:paddingRight="15dp"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/ic_baseline_layers"/>
-
             <TextView
                 android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_layers"
                 android:textColor="@color/white"
                 android:textSize="16dp"
-                android:text="Companyux" />
+                android:text="Companyux Office Detail" />
+
+            <ImageButton
+                android:id="@+id/imb_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_close"/>
 
 
         </LinearLayout>

@@ -9,7 +9,7 @@
         android:id="@+id/splashFragment"
         android:name="com.companyux.backOffice.feature.splash.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
             app:destination="@id/loginFragment"
@@ -26,24 +26,28 @@
         android:id="@+id/loginFragment"
         android:name="com.companyux.backOffice.feature.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment"
             app:exitAnim="@android:anim/fade_out"
             app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.companyux.backOffice.feature.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailOfficeFragment"
+            app:destination="@id/detailOfficeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listPageFragment"
         android:name="com.companyux.backOffice.feature.listPage.CommentPageFragment"
         android:label="fragment_list_page"
-        tools:layout="@layout/fragment_comment_page" >
+        tools:layout="@layout/fragment_comment_page">
         <action
             android:id="@+id/action_listPageFragment_to_detailOfficeFragment"
             app:destination="@id/detailOfficeFragment" />
@@ -52,14 +56,11 @@
         android:id="@+id/detailOfficeFragment"
         android:name="com.companyux.backOffice.feature.detailOffice.DetailOfficeFragment"
         android:label="fragment_detail_office"
-        tools:layout="@layout/fragment_detail_office" />
-    <fragment
-        android:id="@+id/officePageFragment"
-        android:name="com.companyux.backOffice.feature.office.OfficePageFragment"
-        android:label="fragment_office_page"
-        tools:layout="@layout/fragment_office_page" >
+        tools:layout="@layout/fragment_detail_office">
         <action
-            android:id="@+id/action_officePageFragment_to_detailOfficeFragment"
-            app:destination="@id/detailOfficeFragment" />
+            android:id="@+id/action_detailOfficeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
