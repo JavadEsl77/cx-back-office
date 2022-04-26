@@ -119,6 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:minHeight="68dp"
+                    android:textColor="@color/white"
                     android:text="ورود به حساب"
                     android:textSize="16dp"
                     android:textStyle="bold"

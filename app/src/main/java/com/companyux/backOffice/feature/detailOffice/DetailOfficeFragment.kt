@@ -13,10 +13,6 @@ import com.companyux.backOffice.databinding.FragmentDetailOfficeBinding
 
 class DetailOfficeFragment : Fragment() {
     private lateinit var binding:FragmentDetailOfficeBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

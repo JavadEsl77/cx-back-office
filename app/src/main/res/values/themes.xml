@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/yekan_font</item>
+
     </style>
 
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">

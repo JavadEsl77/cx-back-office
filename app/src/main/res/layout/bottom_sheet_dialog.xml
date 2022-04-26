@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:padding="10dp"
+     android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:paddingRight="7dp"
+         android:paddingLeft="7dp"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:gravity="center|right"
+             android:textColor="@color/black"
+             android:text="ثبت لینک جدید"
+             android:textSize="16dp"
+             android:layout_weight="1"/>
+
+         <ImageButton
+             android:id="@+id/idBtnDismiss"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+             android:background="@android:color/transparent"
+             android:src="@drawable/ic_baseline_close_assets"/>
+
+     </LinearLayout>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_margin="10dp"
+         android:background="#d6d6d6"/>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center|right"
+         android:text="- لینک جدید را وارد کنید . سپس روی ثبت لینک زده و منتظر بمانید 😃 "
+         android:textColor="#838383"
+         android:textSize="14dp" />
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/til_cell_number"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="8dp"
+         android:hint="لینک مورد نظر را وارد نمایید"
+         app:boxCornerRadiusBottomEnd="10dp"
+         app:boxCornerRadiusBottomStart="10dp"
+         app:boxCornerRadiusTopEnd="10dp"
+         app:boxCornerRadiusTopStart="10dp"
+         app:placeholderText="Https:// ...">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/edt_cell_number"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:imeOptions="actionDone"
+             android:inputType="textUri"
+             android:maxLength="11"
+             android:textSize="14dp" />
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/btn_set_link"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:minHeight="68dp"
+         android:textColor="@color/white"
+         android:text="ثبت لینک"
+         android:textSize="16dp"
+         android:textStyle="bold"
+         app:backgroundTint="@color/purple_700"
+         app:cornerRadius="10dp" />
+
+ </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
