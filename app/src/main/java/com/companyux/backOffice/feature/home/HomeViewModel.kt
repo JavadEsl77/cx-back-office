@@ -1,4 +1,10 @@
 package com.companyux.backOffice.feature.home
 
-class HomeViewModel {
+import androidx.lifecycle.ViewModel
+
+class HomeViewModel : ViewModel() {
+
+
+
+
 }
